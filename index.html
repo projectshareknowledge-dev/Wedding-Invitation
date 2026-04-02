@@ -26,16 +26,22 @@ overflow-x:hidden;
 
 /* LANDING */
 #landing{
-height:100vh;
-background:radial-gradient(circle,var(--maroon),var(--deep));
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-position:relative;
+  min-height:100vh;
+  padding:20px 20px 10px;
+  background:radial-gradient(circle,var(--maroon),var(--deep));
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  position:relative;
 }
+
+#landing{
+  margin-bottom:-40px;
+}
+
 
 .mandala{
 position:absolute;
@@ -196,6 +202,16 @@ to{transform:translateY(110vh);}
   0%{filter:hue-rotate(0deg);}
   100%{filter:hue-rotate(360deg);}
 }
+
+@media (max-width:768px){
+
+  #landing{
+    padding:20px 15px 5px;
+    margin-bottom:-30px;
+  }
+
+}
+
 </style>
 </head>
 
@@ -227,17 +243,94 @@ With Divine Blessings
  Karthik Surya & Leela Ravali
 </h2>
 
-<p class="reveal" style="
-margin-top:15px;
-line-height:2;
+<h3 class="reveal" style="font-family:Cinzel;">
+ We warmly invite you to celebrate this special occasion with us ❤️
+</h3>
+
+<div class="reveal" style="margin-top:20px; text-align:center;">
+
+<!-- DATE -->
+<div style="
 font-family:'Cinzel', serif;
-font-size:1.1rem;
-color:var(--maroon);
-font-weight:bold;
+font-size:1.3rem;
+letter-spacing:4px;
+color:#000;
 ">
-📅 26 April 2026, Sunday • 8 AM onwards <br>
-📍 Venue: K Conventions, Near Simhachalam, Visakhapatnam
-</p>
+APRIL &nbsp;|&nbsp; 26 &nbsp;|&nbsp; 2026
+</div>
+
+<!-- MUHURTAM WITH SIDE DESIGN -->
+<div style="
+display:flex;
+align-items:center;
+justify-content:center;
+margin:18px 0;
+">
+
+<!-- LEFT LINE -->
+<div style="
+width:70px;
+height:1.5px;
+background:var(--gold);
+position:relative;
+">
+</div>
+
+<!-- LEFT SYMBOL -->
+<div style="
+margin:0 8px;
+color:var(--gold);
+font-size:16px;
+">✿</div>
+
+<!-- TIME -->
+<div style="
+font-family:'Cinzel', serif;
+font-size:1.3rem;
+color:#000;
+font-weight:600;
+margin:0 10px;
+">
+7:39 AM
+</div>
+
+<!-- RIGHT SYMBOL -->
+<div style="
+margin:0 8px;
+color:var(--gold);
+font-size:16px;
+">✿</div>
+
+<!-- RIGHT LINE -->
+<div style="
+width:70px;
+height:1.5px;
+background:var(--gold);
+">
+</div>
+
+</div>
+
+<!-- FOOD -->
+<div style="
+font-family:'Cinzel', serif;
+font-size:1rem;
+color:#333;
+">
+Breakfast – 8:00 AM &nbsp;|&nbsp; Lunch – 12:00 PM
+</div>
+
+<!-- VENUE -->
+<div style="
+margin-top:8px;
+font-family:'Cinzel', serif;
+font-size:0.95rem;
+color:var(--maroon);
+">
+📍 K Conventions, Near Simhachalam, Visakhapatnam
+</div>
+
+</div>
 
 <div class="reveal" style="
 display:flex;
@@ -260,7 +353,7 @@ margin:25px 0;
 </div>
 
 <footer>
-<p>We warmly invite you to celebrate this special occasion with us ❤️</p>
+<p>Cordially invite you and your family to join the occasion of their joyous wedding festivities</p>
 
 <div style="margin-top:15px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
 
@@ -268,7 +361,7 @@ margin:25px 0;
 <button>📍 View Location</button>
 </a>
 
-<a href="#" target="_blank">
+<a href="https://forms.gle/tXWmRnrQsyXZkVy86" target="_blank">
 <button > 📝 Fill Survey </button>
 
 
